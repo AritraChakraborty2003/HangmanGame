@@ -12,14 +12,14 @@ const Main = () => {
             <HangmanImage />
           </div>
           {(screen.width <= 350 && (
-            <div className="right relative top-[47%] lg:left-[50%] lg:top-[0%]  w-[100%] lg:w-[50%]  h-[53%] lg:h-[100%] border-[1px]">
+            <div className="right relative top-[47%] lg:left-[50%] lg:top-[0%]  w-[100%] lg:w-[50%]  h-[53%] lg:h-[100%] border-t-[1px]">
               <TextArea />
               <Hint />
               <ChanceArea />
               <Keyboard />
             </div>
           )) || (
-            <div className="right relative top-[47%] lg:left-[50%] lg:top-[0%]  w-[100%] lg:w-[50%]  h-[53%] lg:h-[100%] border-[1px] overflow-y-hidden">
+            <div className="right relative top-[47%] lg:left-[50%] lg:top-[0%]  w-[100%] lg:w-[50%]  h-[53%] lg:h-[100%] border-t-[1px] border-l-[1px] overflow-y-hidden">
               <TextArea />
               <Hint />
               <ChanceArea />
