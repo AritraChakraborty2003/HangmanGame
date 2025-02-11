@@ -1,8 +1,8 @@
 import { createContext } from "react";
 
 export const GameContext = createContext({
-  guesses: 6,
-  setGuesses: (guesses: number) => {
-    console.log(guesses);
+  incorrect: 6,
+  setIncorrect: (incorrect: number) => {
+    console.log(incorrect);
   },
 });
