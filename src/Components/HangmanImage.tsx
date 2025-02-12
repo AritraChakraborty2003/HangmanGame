@@ -8,7 +8,7 @@ const HangmanImage = () => {
   const { incorrect, setIncorrect } = useContext(GameContext);
 
   const addComponent = () => {
-    if (incorrect != 6) {
+    if (incorrect != 0) {
       const elements: string[] = [
         `<div class="container" id="head" style="height:10vmin; width:10vmin; border:1px solid black; border-radius:5vmin; position:relative; top:0%"></div>`,
         `<div class="container" id="body" style="height:17vmin; width:1px; background-color:black; position:relative; top:0%; left:48%;"></div>`,
@@ -33,7 +33,7 @@ const HangmanImage = () => {
   return (
     <>
       <div className="hangmanHolder pb-3 w-[100%] h-[100%] flex flex-col justify-center items-center overflow-y-hidden">
-        <div className="HagmanHolder w-[70%] h-[80%] border-l-[3px] border-t-[3px] absolute">
+        <div className="HagmanHolder w-[70%] h-[80%] border-l-[3px] border-t-[3px] absolute overflow-y-hidden">
           <div
             className="hline w-[3px] h-[8vmin] bg-black"
             style={{

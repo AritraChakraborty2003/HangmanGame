@@ -8,7 +8,7 @@ const Keyboard = () => {
       <div className="h-[45vh] w-[100%] ">
         <div
           className="keyBoardManager flex flex-wrap gap-x-4 gap-y-4 lg:gap-x-7 lg:gap-y-4 justify-center"
-          style={{ marginTop: "3vmin" }}
+          style={{ marginTop: "3vmin", padding: "0.5vmin" }}
         >
           <Key data={letters} />
         </div>
