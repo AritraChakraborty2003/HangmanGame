@@ -28,6 +28,7 @@ const Main = () => {
       maxWidth: string;
       maxHeight: string;
       margin: string;
+      overflow: string;
     };
   }
 
@@ -42,6 +43,7 @@ const Main = () => {
       maxWidth: "400px",
       maxHeight: "350px",
       margin: "auto",
+      overflow: "hidden",
     },
   };
   if (screen.width >= 1920) {
@@ -56,6 +58,7 @@ const Main = () => {
         maxWidth: "600px",
         maxHeight: "450px",
         margin: "auto",
+        overflow: "hidden",
       },
     };
   } else if (screen.width > 1000 && screen.width < 1920) {
@@ -71,6 +74,7 @@ const Main = () => {
         maxHeight: "346px",
         margin: "auto",
       },
+      overflow: "hidden",
     };
   } else {
     modalStyles = {
@@ -84,6 +88,7 @@ const Main = () => {
         maxWidth: "400px",
         maxHeight: "265px",
         margin: "auto",
+        overflow: "hidden",
       },
     };
   }
