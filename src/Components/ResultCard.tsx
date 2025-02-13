@@ -15,8 +15,8 @@ const ResultCard = (props: ResultCardProps) => {
           >
             <img
               src={result === "Win" ? "happy.png" : "lose.png"}
-              height={220}
-              width={200}
+              height={result === "Win" ? 220 : 150}
+              width={result === "Win" ? 220 : 150}
               style={{ textAlign: "center" }}
             />
 
