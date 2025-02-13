@@ -68,7 +68,7 @@ const Main = () => {
         borderRadius: "10px",
         padding: "10px",
         maxWidth: "400px",
-        maxHeight: "340px",
+        maxHeight: "338px",
         margin: "auto",
       },
     };
