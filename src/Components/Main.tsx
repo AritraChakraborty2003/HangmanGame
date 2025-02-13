@@ -8,6 +8,7 @@ import Keyboard from "./Keyboard";
 import { useContext } from "react";
 import { GameContext } from "../GameContext/GameContext";
 import { countUnique } from "../Utils/countUnique";
+import Result from "./Result";
 
 const Main = () => {
   const {
@@ -18,25 +19,29 @@ const Main = () => {
     incorrect,
     isLose,
     setIsLose,
+    isGameOver,
+    setIsGameOver,
   } = useContext(GameContext);
 
-  const isGameOver = () => {
+  const isGameOverCheck = () => {
     const len: number = countUnique(selectedWord);
     if (correctChosen.length === len) {
       setIsWin(true);
+      setIsGameOver(true);
       console.log("Win");
     } else if (incorrect === 6) {
       setIsLose(true);
+      setIsGameOver(true);
       console.log("Lose");
     }
   };
 
   useEffect(() => {
-    isGameOver();
+    isGameOverCheck();
   }, [correctChosen, incorrect, selectedWord]);
   return (
     <>
-      {(isWin || isLose) && (
+      {(!isGameOver && (
         <div className="MainArea bg-[#FFB22C] w-[100vw] h-[100vh] flex justify-center items-center absolute">
           <div className="playArea w-[92%] absolute flex h-[98%] lg:h-[94%] bg-white rounded-xl">
             <div className="absolute left  w-[100%] lg:w-[50%]  h-[45%] lg:h-[100%]">
@@ -59,7 +64,7 @@ const Main = () => {
             )}
           </div>
         </div>
-      )}
+      )) || <Result isWin={isWin} isLose={isLose} />}
     </>
   );
 };

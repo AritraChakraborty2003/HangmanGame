@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GameContext } from "./GameContext/GameContext";
 import { GenerateWordandHint } from "./Utils/GenerateWordandHint";
 import Main from "./Components/Main";
+
 function App() {
   const wordsArr = GenerateWordandHint();
   const [word, hint] = wordsArr;
@@ -13,6 +14,8 @@ function App() {
   const [chosenWord, setChosenWord] = useState<string[]>([]);
   const [correctChosen, setchosenCorrect] = useState<string[]>([]);
   const [isLose, setIsLose] = useState(false);
+  const [isGameOver, setIsGameOver] = useState(false);
+
   return (
     <>
       <GameContext.Provider
@@ -33,6 +36,8 @@ function App() {
           setchosenCorrect: setchosenCorrect,
           isLose: isLose,
           setIsLose: setIsLose,
+          isGameOver: isGameOver,
+          setIsGameOver: setIsGameOver,
         }}
       >
         <Main />

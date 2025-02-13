@@ -8,6 +8,7 @@ export const GameContext = createContext({
   selectedHint: "",
   isWin: false,
   isLose: false,
+  isGameOver: false,
   chosenWord: [] as string[],
   correctChosen: [] as string[],
   letterStore: [[], ""] as MyType,
@@ -34,5 +35,8 @@ export const GameContext = createContext({
   },
   setIsLose: (isLose: boolean) => {
     console.log(isLose);
+  },
+  setIsGameOver: (isGameOver: boolean) => {
+    console.log(isGameOver);
   },
 });
