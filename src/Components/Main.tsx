@@ -151,8 +151,8 @@ const Main = () => {
         >
           <img
             src={isWin ? "happy.png" : "lose.png"}
-            height={isWin ? 200 : 120}
-            width={isWin ? 200 : 120}
+            height={isWin ? 180 : 120}
+            width={isWin ? 180 : 120}
             style={{ textAlign: "center", marginTop: "4vmin" }}
           />
           <p
