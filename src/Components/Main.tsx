@@ -73,8 +73,8 @@ const Main = () => {
         maxWidth: "400px",
         maxHeight: "346px",
         margin: "auto",
+        overflow: "hidden",
       },
-      overflow: "hidden",
     };
   } else {
     modalStyles = {
