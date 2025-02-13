@@ -158,9 +158,9 @@ const Main = () => {
           <p
             className=""
             style={{
-              marginTop: "4vmin",
+              marginTop: "5.6vmin",
               color: "rgba(0, 0, 0, 0.75)",
-              fontSize: "3vmin",
+              fontSize: "3.25vmin",
               fontFamily: "poppins",
             }}
           >
