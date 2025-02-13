@@ -38,10 +38,9 @@ const Key = (props: KeyProps) => {
         divElement.style.backgroundColor = " #cfb5a0";
         txtElement.style.color = "	#fff";
       }
-      alert(correctChosen);
+
       console.log(letterArr);
     } else {
-      alert(chosenWord);
       setChosenWord(chosenWord);
       setChosenWord([...chosenWord, letter]);
       setIncorrect(incorrect + 1);
