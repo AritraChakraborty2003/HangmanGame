@@ -54,7 +54,7 @@ const Main = () => {
         borderRadius: "10px",
         padding: "10px",
         maxWidth: "600px",
-        maxHeight: "400px",
+        maxHeight: "450px",
         margin: "auto",
       },
     };
@@ -82,7 +82,7 @@ const Main = () => {
         borderRadius: "10px",
         padding: "10px",
         maxWidth: "400px",
-        maxHeight: "285px",
+        maxHeight: "265px",
         margin: "auto",
       },
     };
