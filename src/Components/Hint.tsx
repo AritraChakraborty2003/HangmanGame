@@ -9,7 +9,7 @@ const Hint = () => {
       {/* {console.log(selectedWord)} */}
       <div className="h-[20%] w-[100%] flex">
         <p
-          className="text-[3.65vmin] lg:text-[2.55vmin]"
+          className="text-[3.65vmin] md:text-[2.35vmin]"
           style={{
             marginTop: "3.35vmin",
             marginLeft: "1.5vmin",

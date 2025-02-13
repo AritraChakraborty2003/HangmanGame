@@ -22,13 +22,13 @@ const TextArea = () => {
 
   return (
     <>
-      <div className="h-[17%] lg:h-[25%] w-[100%] flex justify-center items-center">
+      <div className="h-[17%] md:h-[21%] lg:h-[25%] w-[100%] flex justify-center items-center">
         {selectedWord.split("").map((item: string, index: number) => {
           return (
             <span
               id={String(index + 1)}
               key={item + 3}
-              className="text-[8vmin] font-extrabold"
+              className="text-[8vmin] md:text-[6vmin] font-extrabold"
               style={{ padding: "1.3vmin" }}
             >
               _&nbsp;

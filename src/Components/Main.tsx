@@ -76,7 +76,7 @@ const Main = () => {
         overflow: "hidden",
       },
     };
-  } else {
+  } else if (screen.width < 600) {
     modalStyles = {
       overlay: {
         backgroundColor: "rgba(0, 0, 0, 0.75)", // Dark overlay
@@ -87,6 +87,21 @@ const Main = () => {
         padding: "10px",
         maxWidth: "400px",
         maxHeight: "265px",
+        margin: "auto",
+        overflow: "hidden",
+      },
+    };
+  } else {
+    modalStyles = {
+      overlay: {
+        backgroundColor: "rgba(0, 0, 0, 0.75)", // Dark overlay
+      },
+      content: {
+        background: "white",
+        borderRadius: "10px",
+        padding: "10px",
+        maxWidth: "400px",
+        maxHeight: "380px",
         margin: "auto",
         overflow: "hidden",
       },
